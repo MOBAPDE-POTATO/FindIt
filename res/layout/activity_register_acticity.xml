@@ -10,75 +10,88 @@
     tools:context="com.example.daniel.findit.RegisterActicity"
     android:orientation="vertical">
 
-    <EditText
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_margin="10dp"
-        android:id="@+id/etFName"
-        android:hint="First Name" />
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_margin="10dp"
-        android:id="@+id/etLName"
-        android:hint="Last Name" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_margin="10dp"
-        android:id="@+id/etEmail"
-        android:hint="email" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_margin="10dp"
+                android:id="@+id/etFName"
+                android:hint="First Name" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/etPassword"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="10dp"
-        android:hint="password" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_margin="10dp"
+                android:id="@+id/etLName"
+                android:hint="Last Name" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/etConfirmPassword"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="10dp"
-        android:hint="confirm password" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_margin="10dp"
+                android:id="@+id/etEmail"
+                android:hint="email" />
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:layout_gravity="center">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/etPassword"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:hint="password" />
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="20px" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/etConfirmPassword"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:hint="confirm password" />
 
-        <Button
-            android:layout_width="103dp"
-            android:layout_height="wrap_content"
-            android:text="Register"
-            android:id="@+id/bRegister" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_gravity="center">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cancel"
-            android:id="@+id/bCancel" />
-    </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="20px" />
+
+                <Button
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:id="@+id/bRegister" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:id="@+id/bCancel" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
